@@ -113,8 +113,8 @@ export default {
 	  this.params.search = this.search
 	  this.params.super_id = my_id
 	  find${modelName}s(this.params).then(result => {
-      this.${lowerModelName}s = result.data
-      this.page.total = result.total
+	  this.${lowerModelName}s = result.data
+	  this.page.total = result.total
       })
     },
     fetchOrgTypes() {
