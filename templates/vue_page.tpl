@@ -137,17 +137,16 @@ export default {
     handleSubmit() {
       this.$refs.form.validate(valid => {
         if (valid) {
-           let org_type = _.find(this.org_types, {id: this.form.org_type_id})
-           var storage = JSON.parse(localStorage.getItem("webadmin_account"))
-           this.form.parent_id = storage.user.OrgId
-		   if (!org_type) return
-
-		   this.form.org_type_name = org_type.name
-		   save${modelName}(this.form).then(res => {
-		   if (res.code == 0) {
-              this.$message.success("已保存")
-              this.fetch${modelName}s()
-              this.dialog.show = false
+            let org_type = _.find(this.org_types, {id: this.form.org_type_id})
+            var storage = JSON.parse(localStorage.getItem("webadmin_account"))
+            this.form.parent_id = storage.user.OrgId
+            if (!org_type) return
+            this.form.org_type_name = org_type.name
+            save${modelName}(this.form).then(res => {
+            if (res.code == 0) {
+                this.$message.success("已保存")
+                this.fetch${modelName}s()
+                this.dialog.show = false
             }
           })
         } else {
