@@ -144,9 +144,9 @@ export default {
             this.form.org_type_name = org_type.name
             save${modelName}(this.form).then(res => {
             if (res.code == 0) {
-                this.$message.success("已保存")
-                this.fetch${modelName}s()
-                this.dialog.show = false
+               this.$message.success("已保存")
+               this.fetch${modelName}s()
+               this.dialog.show = false
             }
           })
         } else {
