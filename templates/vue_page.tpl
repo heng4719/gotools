@@ -87,6 +87,7 @@ export default {
         page: 1,
         limit: 10
       },
+	  params:{},
       form: {},
       org_types: [],
       dialog: {
@@ -107,7 +108,11 @@ export default {
   },
   methods: {
     fetch${modelName}s() {
-      find${modelName}s(this.search).then(result => {
+		var storage = JSON.parse(localStorage.getItem("webadmin_account"))
+		var my_id = storage.user.id
+		this.params.search = this.search
+		this.params.super_id = my_id
+		find${modelName}s(this.params).then(result => {
         this.${lowerModelName}s = result.data
         this.page.total = result.total
       })
@@ -134,7 +139,9 @@ export default {
       this.$refs.form.validate(valid => {
         if (valid) {
            let org_type = _.find(this.org_types, {id: this.form.org_type_id})
-           if (!org_type) return
+           var storage = JSON.parse(localStorage.getItem("webadmin_account"))
+           this.form.super_id = storage.user.id
+		   if (!org_type) return
 
           this.form.org_type_name = org_type.name
           save${modelName}(this.form).then(res => {

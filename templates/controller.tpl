@@ -7,7 +7,8 @@ package v1
 import (
 	"${project}/internal/model/base"
 	service "${project}/internal/service/base"
-
+	"strconv"
+	
 	"github.com/gin-gonic/gin"
 )
 
@@ -21,8 +22,8 @@ type ${modelName}Controller struct {
 
 func (*${modelName}Controller) Find(c *gin.Context) {
 	page, limit := GetPageParams(c)
-
-	${lowerModelName}s, err := ${lowerModelName}Service.Find(page, limit)
+	superId, _ := strconv.Atoi(c.Query("super_id"))
+	${lowerModelName}s, err := ${lowerModelName}Service.Find(page, limit, superId)
 	if err != nil {
 		ResponseError(c, err)
 		return

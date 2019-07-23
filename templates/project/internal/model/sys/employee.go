@@ -17,6 +17,7 @@ type Employee struct {
 	OrgTypeId int64     `xorm:"comment('机构类型ID')"`
 	OrgId     int64     `xorm:"comment('机构ID')"`
 	OrgName   string    `xorm:"varchar(40) comment('机构名称')"`
+	SuperId   int64     `xorm:"comment('上级Employee的ID')"`
 	CreatedAt time.Time `xorm:"created" json:"created_at"`
 	UpdatedAt time.Time `xorm:"updated" json:"updated_at"`
 	DeletedAt time.Time `xorm:"deleted" json:"deleted_at"`

@@ -24,4 +24,5 @@ type ${modelName}Req struct {
 	OrgTypeName  string
 	Account      string
 	Password     string
+	SuperId      int64
 }
