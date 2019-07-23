@@ -143,9 +143,9 @@ export default {
            this.form.super_id = storage.user.id
 		   if (!org_type) return
 
-          this.form.org_type_name = org_type.name
-          save${modelName}(this.form).then(res => {
-            if (res.code == 0) {
+		   this.form.org_type_name = org_type.name
+		   save${modelName}(this.form).then(res => {
+		   if (res.code == 0) {
               this.$message.success("已保存")
               this.fetch${modelName}s()
               this.dialog.show = false
