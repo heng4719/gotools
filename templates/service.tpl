@@ -26,14 +26,15 @@ func (*${modelName}Service) Find(page, limit int, superId int) (pages *dto.Pages
 	}
 	
 	//筛选出employees.superId == superId 的记录，即被请求搜索的人所创建出来的记录
-	for i := 0; i < len(${lowerModelName}sTemp); i++ {
-		count, err := DB.Where("account = ? and super_id = ?", ${lowerModelName}sTemp[i].Account, superId).Count(sys.Employee{})
+	for _, ${lowerModelName} := range ${lowerModelName}sTemp {
+	
+		count, err := DB.Where("account = ? and super_id = ?", ${lowerModelName}[i].Account, superId).Count(sys.Employee{})
 		if err != nil {
 			return nil, err
 		}
 
 		if count > 0 {
-			${lowerModelName}s = append(${lowerModelName}s, ${lowerModelName}sTemp[i])
+			${lowerModelName}s = append(${lowerModelName}s, ${lowerModelName})
 		}
 	}
 
