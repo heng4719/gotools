@@ -108,13 +108,13 @@ export default {
   },
   methods: {
     fetch${modelName}s() {
-		var storage = JSON.parse(localStorage.getItem("webadmin_account"))
-		var my_id = storage.user.id
-		this.params.search = this.search
-		this.params.super_id = my_id
-		find${modelName}s(this.params).then(result => {
-        this.${lowerModelName}s = result.data
-        this.page.total = result.total
+	  var storage = JSON.parse(localStorage.getItem("webadmin_account"))
+	  var my_id = storage.user.id
+	  this.params.search = this.search
+	  this.params.super_id = my_id
+	  find${modelName}s(this.params).then(result => {
+      this.${lowerModelName}s = result.data
+      this.page.total = result.total
       })
     },
     fetchOrgTypes() {
