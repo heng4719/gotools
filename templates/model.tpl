@@ -9,6 +9,7 @@ import "time"
 type ${modelName} struct {
 	Id           int64     `json:"id"`
 	${modelFields}
+	ParentId     int64	   `xorm:"comment('上级机构ID')"`
 	OrgTypeId    int64     `xorm:"comment('所属组织类型ID')"`
 	OrgTypeName  string    `xorm:"varchar(40) comment('所属组织类型名称')"`
 	Account      string    `xorm:"varchar(40) comment('管理员账号')"`
@@ -20,9 +21,9 @@ type ${modelName} struct {
 type ${modelName}Req struct {
 	Id           int64
 	${justFields}
+	ParentId     int64
 	OrgTypeId    int64
 	OrgTypeName  string
 	Account      string
 	Password     string
-	SuperId      int64
 }

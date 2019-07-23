@@ -108,10 +108,9 @@ export default {
   },
   methods: {
     fetch${modelName}s() {
-	  var storage = JSON.parse(localStorage.getItem("webadmin_account"))
-	  var my_id = storage.user.id
+	  var storage = JSON.parse(LocalAccount.get("webadmin_account"))
 	  this.params.search = this.search
-	  this.params.super_id = my_id
+	  this.params.parent_id = storage.user.OrgId
 	  find${modelName}s(this.params).then(result => {
 	  this.${lowerModelName}s = result.data
 	  this.page.total = result.total
@@ -140,7 +139,7 @@ export default {
         if (valid) {
            let org_type = _.find(this.org_types, {id: this.form.org_type_id})
            var storage = JSON.parse(localStorage.getItem("webadmin_account"))
-           this.form.super_id = storage.user.id
+           this.form.parent_id = storage.user.OrgId
 		   if (!org_type) return
 
 		   this.form.org_type_name = org_type.name

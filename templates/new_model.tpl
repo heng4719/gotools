@@ -12,6 +12,7 @@ type ${modelName} struct {
 	CreatedAt    time.Time `xorm:"created" json:"created_at"`
 	UpdatedAt    time.Time `xorm:"updated" json:"updated_at"`
 	DeletedAt    time.Time `xorm:"deleted" json:"deleted_at"`
+	ParentId	 int64     `json:"parent_id"`
 }
 
 type ${modelName}Req struct {
