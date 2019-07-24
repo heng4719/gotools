@@ -108,9 +108,9 @@ export default {
   },
   methods: {
     fetch${modelName}s() {
-	  var storage = LocalAccount.get()
+	  var user = LocalAccount.getUserInfo()
+      this.form.parent_id = user.OrgId
 	  this.params.search = this.search
-	  this.params.parent_id = storage.user.OrgId
 	  find${modelName}s(this.params).then(result => {
 	  this.${lowerModelName}s = result.data
 	  this.page.total = result.total
@@ -138,8 +138,8 @@ export default {
       this.$refs.form.validate(valid => {
         if (valid) {
             let org_type = _.find(this.org_types, {id: this.form.org_type_id})
-            var storage = LocalAccount.get()
-            this.form.parent_id = storage.user.OrgId
+			var user = LocalAccount.getUserInfo()
+			this.form.parent_id = user.OrgId
             if (!org_type) return
             this.form.org_type_name = org_type.name
             save${modelName}(this.form).then(res => {
