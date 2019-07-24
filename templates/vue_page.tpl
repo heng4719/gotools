@@ -108,7 +108,7 @@ export default {
   },
   methods: {
     fetch${modelName}s() {
-	  var storage = JSON.parse(LocalAccount.get("webadmin_account"))
+	  var storage = LocalAccount.get()
 	  this.params.search = this.search
 	  this.params.parent_id = storage.user.OrgId
 	  find${modelName}s(this.params).then(result => {
