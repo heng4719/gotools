@@ -87,7 +87,7 @@ export default {
         page: 1,
         limit: 10
       },
-	  params:{},
+      params:{},
       form: {},
       org_types: [],
       dialog: {
@@ -109,7 +109,7 @@ export default {
   methods: {
     fetch${modelName}s() {
 	  var user = LocalAccount.getUserInfo()
-      this.form.parent_id = user.OrgId
+	  this.form.parent_id = user.OrgId
 	  this.params.search = this.search
 	  find${modelName}s(this.params).then(result => {
 	  this.${lowerModelName}s = result.data
