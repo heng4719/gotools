@@ -138,7 +138,7 @@ export default {
       this.$refs.form.validate(valid => {
         if (valid) {
             let org_type = _.find(this.org_types, {id: this.form.org_type_id})
-            var storage = JSON.parse(LocalAccount.get("webadmin_account"))
+            var storage = LocalAccount.get()
             this.form.parent_id = storage.user.OrgId
             if (!org_type) return
             this.form.org_type_name = org_type.name
