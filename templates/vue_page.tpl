@@ -138,8 +138,8 @@ export default {
       this.$refs.form.validate(valid => {
         if (valid) {
             let org_type = _.find(this.org_types, {id: this.form.org_type_id})
-			var user = LocalAccount.getUserInfo()
-			this.form.parent_id = user.OrgId
+            var user = LocalAccount.getUserInfo()
+            this.form.parent_id = user.OrgId
             if (!org_type) return
             this.form.org_type_name = org_type.name
             save${modelName}(this.form).then(res => {
