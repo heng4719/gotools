@@ -184,6 +184,20 @@ func insertRoleMenus(session *xorm.Session, parent *sys.SysMenu) (err error) {
 	apiUrls = append(apiUrls, &sys.ApiUrl{ApiUrl: "/v1/admin_api/role/save"})
 	roleSave.ApiUrls = apiUrls
 	roleMenus = append(roleMenus, &roleSave)
+
+	// 角色删除权限
+	roleDelete := sys.SysMenu{}
+	roleDelete.ParentId = roleMenu.Id
+	roleDelete.Name = "角色删除"
+	roleDelete.Level = "level3"
+	roleDelete.Index = 2
+	roleDelete.NodeType = "permission"
+	roleDelete.OrgTypeIds = parent.OrgTypeIds
+
+	apiUrls = make([]*sys.ApiUrl, 0)
+	apiUrls = append(apiUrls, &sys.ApiUrl{ApiUrl: "/v1/admin_api/role/del"})
+	roleDelete.ApiUrls = apiUrls
+	roleMenus = append(roleMenus, &roleDelete)
 	if _, err = DB.InsertTx(session, &roleMenus); err != nil {
 		return err
 	}
@@ -219,6 +233,7 @@ func insertEmployeeMenus(session *xorm.Session, parent *sys.SysMenu) (err error)
 	apiUrls := make([]*sys.ApiUrl, 0)
 	apiUrls = append(apiUrls, &sys.ApiUrl{ApiUrl: "/v1/admin_api/employee/query"})
 	apiUrls = append(apiUrls, &sys.ApiUrl{ApiUrl: "/v1/admin_api/employee/get"})
+	apiUrls = append(apiUrls, &sys.ApiUrl{ApiUrl: "/v1/admin_api/employee/update_password"})
 	employeeQuery.ApiUrls = apiUrls
 	employeeMenus = append(employeeMenus, &employeeQuery)
 
@@ -309,6 +324,35 @@ func insertBaseMenus(session *xorm.Session, parent *sys.SysMenu) (err error) {
 		apiUrls = append(apiUrls, &sys.ApiUrl{ApiUrl: fmt.Sprintf("/v1/admin_api/%s/save", orgType.Code)})
 		baseSave.ApiUrls = apiUrls
 		childMenus = append(childMenus, &baseSave)
+
+		// xxx编辑权限
+		baseDelete := sys.SysMenu{}
+		baseDelete.ParentId = baseMenu.Id
+		baseDelete.Name = fmt.Sprintf("%s删除", orgType.Name)
+		baseDelete.Level = "level3"
+		baseDelete.Index = 3
+		baseDelete.NodeType = "permission"
+		baseDelete.OrgTypeIds = getOrgParentIds(orgType)
+
+		apiUrls = make([]*sys.ApiUrl, 0)
+		apiUrls = append(apiUrls, &sys.ApiUrl{ApiUrl: fmt.Sprintf("/v1/admin_api/%s/del", orgType.Code)})
+		baseDelete.ApiUrls = apiUrls
+		childMenus = append(childMenus, &baseDelete)
+
+		basePassWordReset := sys.SysMenu{}
+		basePassWordReset.ParentId = baseMenu.Id
+		basePassWordReset.Name = "密码重置"
+		basePassWordReset.Level = "level3"
+		basePassWordReset.Index = 4
+		basePassWordReset.NodeType = "permission"
+		basePassWordReset.OrgTypeIds = getOrgParentIds(orgType)
+
+		apiUrls = make([]*sys.ApiUrl, 0)
+		//apiUrls = append(apiUrls, &sys.ApiUrl{ApiUrl: fmt.Sprintf("/v1/admin_api/%s/reset_password",orgType.Code)})
+		apiUrls = append(apiUrls, &sys.ApiUrl{ApiUrl: fmt.Sprintf("/v1/admin_api/employee/reset_password")})
+		basePassWordReset.ApiUrls = apiUrls
+		childMenus = append(childMenus, &basePassWordReset)
+
 		if _, err = DB.InsertTx(session, &childMenus); err != nil {
 			return err
 		}

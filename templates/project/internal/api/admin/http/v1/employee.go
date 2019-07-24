@@ -18,6 +18,8 @@ func (self *EmployeeController) Setup() {
 	self.Router.GET("/employee/get", self.Get)
 	self.Router.GET("/employee/query", self.Find)
 	self.Router.POST("/employee/save", self.Save)
+	self.Router.POST("/employee/reset_password", self.ResetPassword)
+	self.Router.POST("/employee/update_password", self.UpdatePassword)
 }
 
 func (self *EmployeeController) Find(c *gin.Context) {
@@ -62,6 +64,42 @@ func (self *EmployeeController) Save(c *gin.Context) {
 	employee.OrgId = claims.OrgId
 	employee.OrgName = claims.OrgName
 	if err := employeeService.Save(employee); err != nil {
+		ResponseError(c, err)
+		return
+	}
+
+	ResponseOK(c, "")
+}
+
+type EmployeeReq struct {
+	account string
+}
+
+func (self *EmployeeController) ResetPassword(c *gin.Context) {
+
+	employeeReq := new(EmployeeReq)
+	if err := BindJSON(c, employeeReq); err != nil {
+		ResponseError(c, err)
+		return
+	}
+
+	if err := employeeService.ResetPassword(employeeReq.account); err != nil {
+		ResponseError(c, err)
+		return
+	}
+
+	ResponseOK(c, "")
+}
+
+func (self *EmployeeController) UpdatePassword(c *gin.Context) {
+
+	passwordReq := new(sys.PasswordReq)
+	if err := BindJSON(c, passwordReq); err != nil {
+		ResponseError(c, err)
+		return
+	}
+
+	if err := employeeService.UpdatePassword(passwordReq); err != nil {
 		ResponseError(c, err)
 		return
 	}

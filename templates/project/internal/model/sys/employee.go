@@ -28,3 +28,10 @@ type LoginInfoReq struct {
 	Password string `json:"password" binding:"required"`
 	//Type     string
 }
+
+type PasswordReq struct {
+	Account     string
+	OldPassword string
+	Password    string
+	Password2   string
+}

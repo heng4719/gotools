@@ -70,7 +70,7 @@ import {
   findOrgTypesSelect,
   find${modelName}s,
   save${modelName},
-  delete${modelName},
+  del${modelName},
   saveEmployee,
   resetPasswordEmployee
 } from "@/api/api"
@@ -90,6 +90,7 @@ export default {
       params:{},
       form: {},
       org_types: [],
+      selectVal:0,
       dialog: {
         show: false,
         title: ""
@@ -125,9 +126,14 @@ export default {
       this.$refs.form.clearValidate()
     },
     handleAdd() {
+    for (var i=0;i<this.org_types.length;i++){
+        if ("${orgTypeName}"===this.org_types[i].name){
+        this.selectVal=i+1
+        }
+     }
       this.dialog.show = true
       this.dialog.title = "新增"
-      this.form = {}
+      this.form = {org_type_id:this.selectVal}
     },
     handleEdit(item) {
       this.form = _.cloneDeep(item)
@@ -161,7 +167,7 @@ export default {
         cancelButtonText: "取消",
         type: "warning"
       }).then(() => {
-        resetPasswordEmployee({ id: row.employee_id, password: "111111" }).then(
+        resetPasswordEmployee({account: row.account}).then(
           res => {
             if (res.code == 0) {
               this.$message.success("已重置密码")
@@ -179,7 +185,7 @@ export default {
         cancelButtonText: "取消",
         type: "warning"
       }).then(() => {
-        delete${modelName}([row.id]).then(result => {
+        del${modelName}({id:row.id}).then(result => {
           if (result.code == 0) {
             this.fetch${modelName}s()
             this.$message.success("已删除")

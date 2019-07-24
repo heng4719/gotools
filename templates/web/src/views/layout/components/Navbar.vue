@@ -47,6 +47,9 @@
             ref="employeeForm"
             class="form"
           >
+            <el-form-item label="用户" prop="account" hidden>
+              <el-input type="text" v-model="employeeForm.account" placeholder="用户" ></el-input>
+            </el-form-item>
             <el-form-item label="原密码" prop="old_password">
               <el-input type="password" v-model="employeeForm.old_password" placeholder="请输入原密码"></el-input>
             </el-form-item>
@@ -152,6 +155,7 @@ export default {
     },
     resetPassword(){
       this.dialogVisible=true
+      this.employeeForm = {account: LocalAccount.getUserInfo().account}
     },
     submit() {
       this.$refs.employeeForm.validate(valid => {

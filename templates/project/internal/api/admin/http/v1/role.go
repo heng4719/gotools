@@ -70,5 +70,5 @@ func (*RoleController) Delete(c *gin.Context) {
 func (self *RoleController) Setup() {
 	self.Router.GET("/role/query", self.Find)
 	self.Router.POST("/role/save", self.Save)
-	self.Router.GET("/role/delete", self.Delete)
+	self.Router.GET("/role/del", self.Delete)
 }

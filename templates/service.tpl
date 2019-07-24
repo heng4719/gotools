@@ -7,6 +7,7 @@ import (
 	"${project}/internal/model/sys"
 
 	"github.com/jinzhu/copier"
+	${errors}
 )
 
 type ${modelName}Service struct{}
@@ -74,5 +75,14 @@ func (*${modelName}Service) Save(req *base.${modelName}Req) (err error) {
 	}
 
 	session.Commit()
+	return
+}
+
+func (*${modelName}Service) Delete(id int64) (err error) {
+
+    ${deleteStatement}
+
+	${lowerModelName} := new(base.${modelName})
+	_, err = DB.DeleteById(id, ${lowerModelName})
 	return
 }

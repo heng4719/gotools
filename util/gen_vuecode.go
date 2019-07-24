@@ -25,7 +25,7 @@ func CreateVueProject() {
 		return
 	}
 
-	CopyDir(getProjectPath() + "/templates/web", getProjectPath() + "/output/"+getVueProjectName())
+	CopyDir(getProjectPath()+"/templates/web", getProjectPath()+"/output/"+getVueProjectName())
 	renameProjectName()
 
 	genVueProjectCodes()
@@ -88,6 +88,7 @@ func genVuePageCodes(modelName string, fields map[string]interface{}) {
 	templatePath := getTemplatePath("vue_page")
 	content := ReadTemplate(templatePath)
 	content = formatContent(modelName, content)
+	content = formatContentName(modelName, content)
 
 	tableColumnContents, formContents := genVuePageFormContents(fields)
 	content = strings.Replace(content, "${formContents}", formContents, -1)
@@ -257,13 +258,13 @@ func genVueRouteContent(modelName string) string {
 
 func genPostcssrcJs() {
 	fileName := GetVueNewFilePath(VuePostcssrcjsPath, getVueProjectName(), "")
-	content := ReadTemplate(getProjectPath()+"/templates/postcssrc_js.tpl")
+	content := ReadTemplate(getProjectPath() + "/templates/postcssrc_js.tpl")
 	GenCodeFile(fileName, content)
 }
 
 func genBabelrc() {
 	fileName := GetVueNewFilePath(VueBabelrcPath, getVueProjectName(), "")
-	content := ReadTemplate(getProjectPath()+"/templates/babelrc.tpl")
+	content := ReadTemplate(getProjectPath() + "/templates/babelrc.tpl")
 	GenCodeFile(fileName, content)
 }
 

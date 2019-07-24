@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b5184f6a-e6ab-4cbc-8d33-753581a90ea6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/gotools.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/casbin.toml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/casbin.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/mysql.toml" beforeDir="false" afterPath="$PROJECT_DIR$/configs/mysql.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/model/model.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/controller.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/controller.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/model.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/model.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/model_go.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/model_go.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/new_controller.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/new_controller.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/new_service.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/new_service.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/employee.go" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/employee.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/role.go" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/role.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project/internal/model/sys/employee.go" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/internal/model/sys/employee.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/project/internal/service/sys/employee_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/templates/project/internal/service/sys/employee_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/service.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/service.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/vue_page.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/vue_page.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/templates/web/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/web/src/views/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/templates/web/src/views/layout/components/Navbar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/web/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/templates/web/src/views/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/gen_gocode.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/gen_gocode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/gen_vuecode.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/gen_vuecode.go" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/vue_page.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/util/gen_gocode.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/gen_vuecode.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2982">
+              <caret line="90" column="21" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+              <folding>
+                <element signature="e#66#105#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/gen_util.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <folding>
+                <element signature="e#66#137#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/internal/model/sys/org_type.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configs/org_type.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/output/hello-go/internal/model/model.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="214" column="36" selection-start-line="214" selection-start-column="36" selection-end-line="214" selection-end-column="36" />
+              <folding>
+                <element signature="e#15#344#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configs/casbin.toml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configs/mysql.toml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>../</find>
+      <find>../templates/</find>
+      <find>ProjectName</find>
+      <find>genVuePageFormContents</find>
+      <find>genVuePageTableColumnContent</find>
+      <find>*ProjectName</find>
+      <find>SetWatcher</find>
+      <find>watcher.Update()</find>
+      <find>/v1/admin_api/org_type/query_by_tree</find>
+      <find>readonly</find>
+      <find>search</find>
+      <find>Bank</find>
+      <find>getTemplatePath</find>
+      <find>templates/</find>
+      <find>GetNewRouterFilePath</find>
+      <find>fileName</find>
+      <find>NewBaseModelPath</find>
+      <find>NewBaseServicePath</find>
+      <find>New</find>
+      <find>genVuePageCodes</find>
+      <find>genRuleContents</find>
+      <find>print</find>
+      <find>fmt.printf</find>
+      <find>NewGenModule</find>
+      <find>BaseModelPath</find>
+      <find>ParseToken</find>
+      <find>CustomClaims</find>
+      <find>JWTAuth</find>
+      <find>&quot;claims</find>
+      <find>gf</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="GOROOT" path="D:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/new_vue_page.tpl" />
+        <option value="$PROJECT_DIR$/templates/new_vue_routes.tpl" />
+        <option value="$PROJECT_DIR$/cmd/gotools.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/http/v1/routes.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/admin/api/http/v1/routes.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/open/api/http/v1/routes.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/common/middleware/jwt/jwt.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/login_auth.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/org_type.go" />
+        <option value="$PROJECT_DIR$/templates/casbin.toml.tpl" />
+        <option value="$PROJECT_DIR$/internal/conf/conf.go" />
+        <option value="$PROJECT_DIR$/output/eparking-go/internal/api/pc/http/v1/base.go" />
+        <option value="$PROJECT_DIR$/output/eparking-go/internal/server/http/server.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/server/http/server.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/base.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/pc/http/v1/base.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/app/http/v1/base.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/h5/http/v1/base.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/common/middleware/jwt/jwt-gin.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/h5/http/v1/routes.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/app/http/v1/routes.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/routes.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/pc/http/v1/routes.go" />
+        <option value="$PROJECT_DIR$/templates/routes.tpl" />
+        <option value="$PROJECT_DIR$/output/eparking-go/internal/common/middleware/casbin/casbin.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/common/middleware/casbin/casbin.go" />
+        <option value="$PROJECT_DIR$/util/gen_config.go" />
+        <option value="$PROJECT_DIR$/go.mod" />
+        <option value="$PROJECT_DIR$/go.sum" />
+        <option value="$PROJECT_DIR$/templates/project/go.mod" />
+        <option value="$PROJECT_DIR$/templates/project/go.sum" />
+        <option value="$PROJECT_DIR$/templates/new_controller.tpl" />
+        <option value="$PROJECT_DIR$/templates/new_service.tpl" />
+        <option value="$PROJECT_DIR$/templates/model.tpl" />
+        <option value="$PROJECT_DIR$/templates/controller.tpl" />
+        <option value="$PROJECT_DIR$/templates/service.tpl" />
+        <option value="$PROJECT_DIR$/templates/web/src/views/layout/components/Navbar.vue" />
+        <option value="$PROJECT_DIR$/templates/project/internal/model/sys/employee.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/role.go" />
+        <option value="$PROJECT_DIR$/util/gen_vuecode.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/model/model.go" />
+        <option value="$PROJECT_DIR$/templates/vue_page.tpl" />
+        <option value="$PROJECT_DIR$/templates/project/internal/service/sys/employee_service.go" />
+        <option value="$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/employee.go" />
+        <option value="$PROJECT_DIR$/internal/model/model.go" />
+        <option value="$PROJECT_DIR$/configs/org_type.json" />
+        <option value="$PROJECT_DIR$/configs/org.json" />
+        <option value="$PROJECT_DIR$/configs/casbin.toml" />
+        <option value="$PROJECT_DIR$/configs/mysql.toml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/util/gen_gocode.go" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="27" />
+    <option name="y" value="96" />
+    <option name="width" value="1401" />
+    <option name="height" value="777" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="gotools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gotools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gotools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gotools" type="462c0819:PsiDirectoryNode" />
+              <item name="cmd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gotools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gotools" type="462c0819:PsiDirectoryNode" />
+              <item name="configs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gotools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gotools" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gotools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gotools" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gotools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gotools" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gotools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gotools" type="462c0819:PsiDirectoryNode" />
+              <item name="internal" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="sys" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gotools" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gotools" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/output/hello4-go" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/project/internal/open/api/pc" />
+      <recent name="$PROJECT_DIR$/templates/project/internal/open/api/h5" />
+      <recent name="$PROJECT_DIR$/templates/project/internal/open/api/app" />
+      <recent name="$PROJECT_DIR$/templates/project/internal/open/api" />
+      <recent name="$PROJECT_DIR$/templates/project/internal/admin/api" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/project/internal/api/pc" />
+      <recent name="$PROJECT_DIR$/templates/project/internal/api/h5" />
+      <recent name="$PROJECT_DIR$/templates/project/internal/api/app" />
+      <recent name="$PROJECT_DIR$/templates/project/internal/api/admin" />
+      <recent name="$PROJECT_DIR$/templates/project/internal/open/pc" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Build.go build employee.go login_auth.go org_type.go role.go role_menu.go">
+    <configuration name="go build employee.go login_auth.go org_type.go role.go role_menu.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gotools" />
+      <working_directory value="$PROJECT_DIR$/templates/project" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/templates/project/internal/api/pc/http/v1/employee.go|$PROJECT_DIR$/templates/project/internal/api/pc/http/v1/login_auth.go|$PROJECT_DIR$/templates/project/internal/api/pc/http/v1/org_type.go|$PROJECT_DIR$/templates/project/internal/api/pc/http/v1/role.go|$PROJECT_DIR$/templates/project/internal/api/pc/http/v1/role_menu.go" />
+      <package value="gotools" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gotools" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/cmd/main.go" />
+      <package value="goadmin-tools" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build employee.go login_auth.go org_type.go role.go role_menu.go" />
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="16" y="23" width="1400" height="792" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26435935" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49885845" weight="0.31282052" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39850748" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50114155" side_tool="true" weight="0.31282052" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.tpl" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <proxy>direct</proxy>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/util/gen_util.go</url>
+          <line>46</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/new_vue_routes.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_vue_page.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-912">
+          <caret line="54" column="8" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_controller.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/model/sys/role.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/model/sys/role_menu.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/model/sys/sys_menu.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/conf/conf.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-117">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="e#66#177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/conf/mysql_conf.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/DB/base_dao.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3362">
+          <caret line="244" column="32" selection-start-line="244" selection-start-column="32" selection-end-line="244" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/DB/datasource.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/model/base/base_service.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-155" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/model/dto/pages.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/project/internal/model/dto/pages.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_model.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_service.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="836">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_routes.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/casbin.toml.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/babelrc.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/api_js.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mysql.toml.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" selection-start-line="6" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/new_api_js.tpl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/controller.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/1562936179826.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/WechatIMG605.jpeg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/WechatIMG605.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/conf/app_conf.go">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/model/sys/employee.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/base.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+          <folding>
+            <element signature="e#12#243#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/web/src/views/layout/components/Navbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="151" column="23" selection-start-line="151" selection-start-column="23" selection-end-line="151" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/role.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/project/internal/model/sys/employee.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/model.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmd/gotools.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/service.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/vue_page.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/project/internal/service/sys/employee_service.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1862">
+          <caret line="106" column="37" selection-start-line="106" selection-start-column="37" selection-end-line="106" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/new_gen_module.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/project/internal/api/admin/http/v1/employee.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="75" column="1" selection-start-line="75" selection-start-column="1" selection-end-line="75" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/project/internal/model/model.go" />
+    <entry file="file://$PROJECT_DIR$/internal/model/model.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6042">
+          <caret line="325" column="50" lean-forward="true" selection-start-line="325" selection-start-column="50" selection-end-line="325" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/org.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/hello-go/internal/model/model.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="214" column="36" selection-start-line="214" selection-start-column="36" selection-end-line="214" selection-end-column="36" />
+          <folding>
+            <element signature="e#15#344#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/casbin.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/mysql.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configs/org_type.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/model_go.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2140">
+          <caret line="35" column="20" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/internal/model/sys/org_type.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/gen_util.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding>
+            <element signature="e#66#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/gen_vuecode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2982">
+          <caret line="90" column="21" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
+          <folding>
+            <element signature="e#66#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/gen_gocode.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
