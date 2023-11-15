@@ -98,8 +98,6 @@ cd hello-admin
 npm install && npm run dev
 ```
 9. 初始化超级管理员账号密码为：super_admin/111111
-有疑问可以加我微信：  
-![微信二维码](https://images.gitee.com/uploads/images/2019/0718/094023_81e9896e_88608.png "微信二维码")
 
 
 
